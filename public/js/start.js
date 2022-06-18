@@ -20,7 +20,7 @@ const HTTP_PARAM_NAME = 'actionToken';
 const IAM_ACCESSKEY_ID = '[アクセスキーID]';
 const IAM_SECRET_KEY = '[シークレットアクセスキー]';
 
-const base_url = 'https://[立ち上げたNode.jsのホスト名];
+const base_url = 'https://[立ち上げたNode.jsのホスト名]';
 
 const awsIot = require('aws-iot-device-sdk');
 var new_win;
