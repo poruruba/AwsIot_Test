@@ -41,7 +41,7 @@ exports.handler = async (event, context, callback) => {
 	if( event.path == '/publish-cusotm-http'){
 		var body = JSON.parse(event.body);
 		var headers = {
-			'x-amz-customauthorizer-name' : AWSIOT_CUSTOM_AUTHORIZER
+			'X-Amz-CustomAuthorizer-Name' : AWSIOT_CUSTOM_AUTHORIZER
 		};
 		await do_post_with_headers("https://" + AWSIOT_ENDPOINT + '/topics/' + AWSIOT_TOPIC + '?' + HTTP_PARAM_NAME + '=allow', body, headers);
 		return new Response({});
