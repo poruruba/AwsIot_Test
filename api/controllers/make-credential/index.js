@@ -38,7 +38,7 @@ const cognitoidentity = new AWS.CognitoIdentity({
 });
 
 exports.handler = async (event, context, callback) => {
-	if( event.path == '/publish-cusotm-http'){
+	if( event.path == '/publish-custom-http'){
 		var body = JSON.parse(event.body);
 		var headers = {
 			'X-Amz-CustomAuthorizer-Name' : AWSIOT_CUSTOM_AUTHORIZER
