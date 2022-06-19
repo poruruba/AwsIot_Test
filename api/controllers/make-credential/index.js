@@ -14,6 +14,7 @@ const AWSIOT_POLICY_NAME = "iot_limitedaccess_policy";
 const AWSIOT_CUSTOM_AUTHORIZER = 'test-custom-authorizer';
 const AWSIOT_ENDPOINT = '[AWS IoTデバイスデータエンドポイント]'; //XXXXXXXXX-ats.iot.ap-northeast-1.amazonaws.com';
 const AWSIOT_TOPIC = "test_sub";
+const HTTP_PARAM_NAME = 'actionToken';
 
 const { URL, URLSearchParams } = require('url');
 const fetch = require('node-fetch');
@@ -42,7 +43,7 @@ exports.handler = async (event, context, callback) => {
 		var headers = {
 			'x-amz-customauthorizer-name' : AWSIOT_CUSTOM_AUTHORIZER
 		};
-		await do_post_with_headers("https://" + AWSIOT_ENDPOINT + '/topics/' + AWSIOT_TOPIC + '?actionToken=allow', body, headers);
+		await do_post_with_headers("https://" + AWSIOT_ENDPOINT + '/topics/' + AWSIOT_TOPIC + '?' + HTTP_PARAM_NAME + '=allow', body, headers);
 		return new Response({});
 	}else
 	if( event.path == '/make-credential-assumerole' ){
