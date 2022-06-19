@@ -3,8 +3,8 @@
 //const vConsole = new VConsole();
 //window.datgui = new dat.GUI();
 
-const REDIRECT_URL = 'https://home.poruru.work:10443/auth_dialog/index.html';
-const COGNITO_URL = 'https://poruru.auth.ap-northeast-1.amazoncognito.com';
+const REDIRECT_URL = 'https://xxxxxxx/auth_dialog/index.html';
+const COGNITO_URL = 'https://xxxxxx.auth.ap-northeast-1.amazoncognito.com';
 
 var vue_options = {
     el: "#top",
