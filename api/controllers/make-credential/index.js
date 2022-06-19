@@ -5,7 +5,7 @@ const Response = require(HELPER_BASE + 'response');
 const Redirect = require(HELPER_BASE + 'redirect');
 
 const COGNITO_FEDERATED_ID = '[Cognito IDプール]'; //ap-northeast-1:XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXX';
-const COGNITO_USERPOOL_ID = '[CognitoユーザプールID]': //ap-northeast-1_XXXXXXXXX';
+const COGNITO_USERPOOL_ID = '[CognitoユーザプールID]'; //ap-northeast-1_XXXXXXXXX';
 const COGNITO_URL = '[Cognitoドメイン名]'; //https://XXXXX.auth.ap-northeast-1.amazoncognito.com';
 const COGNITO_CLIENT_ID = '[クライアントID]';
 const COGNITO_CLIENT_SECRET = '[クライアントシークレット]';
