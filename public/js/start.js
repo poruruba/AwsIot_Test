@@ -52,7 +52,7 @@ var vue_options = {
             var params = {
                 message : this.message
             };
-            var result = await do_post(base_url + '/publish-cusotm-http', params );
+            var result = await do_post(base_url + '/publish-custom-http', params );
             console.log(result);
         },
 
