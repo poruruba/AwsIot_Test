@@ -1,5 +1,5 @@
 paths:
-  /publish-cusotm-http:
+  /publish-custom-http:
     post:
       parameters:
         - in: body
